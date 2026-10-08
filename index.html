@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADIB Mobile Device Enrollment Knowledge Base</title>
+
+<meta name="description" content="ADIB Mobile Device Enrollment Knowledge Base for iOS and Android Microsoft 365 enrollment.">
+<meta name="keywords" content="ADIB, iOS Enrollment, Android Enrollment, Microsoft Authenticator, Intune, Mobile Enrollment, Passwordless Sign In, MFA">
+
+<style>
+body{
+    font-family: Segoe UI, Arial, sans-serif;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+    line-height:1.7;
+    color:#333;
+}
+h1{
+    color:#005a9c;
+}
+h2{
+    color:#005a9c;
+    margin-top:40px;
+}
+.section{
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:8px;
+    margin-top:15px;
+}
+code{
+    background:#eef2f7;
+    padding:3px 6px;
+    border-radius:4px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>ADIB Mobile Device Enrollment Knowledge Base</h1>
+
+<p>
+This knowledge base provides guidance for enrolling iOS and Android mobile devices into Microsoft 365, configuring Microsoft Authenticator, enabling passwordless sign-in, and setting up secondary authentication methods.
+</p>
+
+<hr>
+
+<h2>Quick Links</h2>
+
+<ul>
+<li>First Time Mobile Setup</li>
+<li>Replacing an Existing Device</li>
+<li>iOS Enrollment</li>
+<li>Android Enrollment</li>
+<li>Microsoft Authenticator Setup</li>
+<li>Passwordless Sign-In</li>
+<li>Secondary Authentication Method</li>
+<li>Troubleshooting</li>
+</ul>
+
+<h2>Scenario 1: First Time Mobile Setup</h2>
+
+<div class="section">
+<ol>
+<li>Enroll the mobile device.</li>
+<li>Configure Microsoft Authenticator.</li>
+<li>Configure a backup authentication method.</li>
+</ol>
+</div>
+
+<h2>Scenario 2: Replacing an Existing Device</h2>
+
+<div class="section">
+<ol>
+<li>Open Security Info.</li>
+<li>Delete the old registered authentication device.</li>
+<li>Remove the management profile or work profile from the old device.</li>
+<li>Enroll the new device.</li>
+<li>Configure Microsoft Authenticator.</li>
+<li>Configure a secondary authentication method.</li>
+</ol>
+</div>
+
+<h2>Security Information Portal</h2>
+
+<div class="section">
+
+<p>Access Security Info Portal:</p>
+
+<p>
+<code>https://aka.ms/mysecurityinfo</code>
+</p>
+
+<p>
+Use this portal to:
+</p>
+
+<ul>
+<li>Remove old mobile devices.</li>
+<li>Add Microsoft Authenticator.</li>
+<li>Add SMS verification.</li>
+<li>Enable passwordless authentication.</li>
+<li>Manage authentication methods.</li>
+</ul>
+
+</div>
+
+<h2>Remove Existing Mobile Device</h2>
+
+<div class="section">
+
+<h3>Common Steps</h3>
+
+<ol>
+<li>Open Security Info Portal.</li>
+<li>Sign in using ADIB credentials.</li>
+<li>Select Security Info.</li>
+<li>Delete the old device.</li>
+</ol>
+
+<h3>iOS</h3>
+
+<p>
+Settings → General → VPN & Device Management → Management Profile → Remove Management
+</p>
+
+<h3>Android</h3>
+
+<p>
+Settings → Users & Accounts → Work Account → Remove Work Profile → Delete
+</p>
+
+</div>
+
+<h2>iOS Enrollment</h2>
+
+<div class="section">
+
+<p>
+Enrollment URL:
+</p>
+
+<p>
+<code>https://aka.ms/iosenrollment</code>
+</p>
+
+<ol>
+<li>Open Safari.</li>
+<li>Browse to the enrollment URL.</li>
+<li>Sign in with ADIB credentials.</li>
+<li>Select Get Started.</li>
+<li>Select Continue.</li>
+<li>Allow download of Management Profile.</li>
+<li>Open Settings.</li>
+<li>Navigate to VPN & Device Management.</li>
+<li>Install Management Profile.</li>
+<li>Select Trust.</li>
+<li>Wait for applications to install.</li>
+</ol>
+
+</div>
+
+<h2>Android Enrollment</h2>
+
+<div class="section">
+
+<ol>
+<li>Download Microsoft Intune Company Portal from Google Play.</li>
+<li>Sign in using ADIB credentials.</li>
+<li>Grant required permissions.</li>
+<li>Select Begin.</li>
+<li>Complete enrollment.</li>
+<li>Open Company Portal.</li>
+<li>Wait for applications to install.</li>
+</ol>
+
+</div>
+
+<h2>Microsoft Authenticator Setup</h2>
+
+<div class="section">
+
+<ol>
+<li>Open Security Info Portal.</li>
+<li>Select Add Method.</li>
+<li>Select Authenticator App.</li>
+<li>Select Add.</li>
+<li>Select Next.</li>
+<li>Open Microsoft Authenticator on mobile device.</li>
+<li>Scan QR Code.</li>
+<li>Approve the number matching challenge.</li>
+<li>Complete setup.</li>
+</ol>
+
+</div>
+
+<h2>Passwordless Sign-In</h2>
+
+<div class="section">
+
+<ol>
+<li>Open Microsoft Authenticator.</li>
+<li>Select ADIB account.</li>
+<li>Select Enable Phone Sign-In.</li>
+<li>Verify identity.</li>
+<li>Complete registration.</li>
+</ol>
+
+</div>
+
+<h2>Secondary Authentication Method</h2>
+
+<div class="section">
+
+<ol>
+<li>Open Security Info Portal.</li>
+<li>Select Add Method.</li>
+<li>Select Phone.</li>
+<li>Enter mobile number.</li>
+<li>Select Text Me a Code.</li>
+<li>Enter SMS verification code.</li>
+<li>Select Done.</li>
+</ol>
+
+</div>
+
+<h2>Troubleshooting</h2>
+
+<div class="section">
+
+<h3>I no longer have access to my old phone</h3>
+
+<p>
+Use "I can't use my Microsoft Authenticator app right now" and authenticate using SMS or voice call.
+</p>
+
+<h3>QR Code is not scanning</h3>
+
+<p>
+Ensure camera permissions are enabled for Microsoft Authenticator.
+</p>
+
+<h3>Apps are not appearing after enrollment</h3>
+
+<p>
+Wait up to 15 minutes after successful enrollment and refresh Company Portal or Management Profile installation.
+</p>
+
+</div>
+
+<h2>Keywords for Copilot Retrieval</h2>
+
+<div class="section">
+
+<p>
+iOS enrollment, Android enrollment, Intune Company Portal,
+Microsoft Authenticator, Passwordless
