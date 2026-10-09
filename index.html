@@ -1,237 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ADIB Employee Digital Workplace Knowledge Base</title>
+<!-- ===================================================== -->
+<!-- VIRTUAL OFFICE & REMOTE ACCESS -->
+<!-- ===================================================== -->
 
-<meta name="description" content="ADIB Employee Knowledge Base for Mobile Enrollment, MFA, Microsoft Authenticator, Cisco VPN and vOffice Access">
-
-<style>
-body{
-    font-family:Segoe UI,Arial,sans-serif;
-    max-width:1200px;
-    margin:auto;
-    padding:20px;
-    line-height:1.7;
-}
-h1,h2,h3{
-    color:#005a9c;
-}
-.section{
-    background:#f7f9fc;
-    border-left:4px solid #005a9c;
-    padding:15px;
-    margin-bottom:20px;
-}
-</style>
-</head>
-<body>
-
-<h1>ADIB Employee Digital Workplace Knowledge Base</h1>
-
-<p>
-This knowledge base contains employee guidance for Microsoft 365 mobile enrollment,
-multi-factor authentication, Microsoft Authenticator, passwordless sign-in,
-Cisco AnyConnect VPN, and vOffice remote access.
-</p>
-
-<hr>
-
-<h2>Mobile Device Enrollment</h2>
-
-<div class="section">
-
-<h3>First-Time Mobile Setup</h3>
-
-<ol>
-<li>Enroll the mobile device.</li>
-<li>Install Microsoft Authenticator.</li>
-<li>Configure Microsoft Authenticator.</li>
-<li>Add a backup authentication method.</li>
-</ol>
-
-<h3>Replacing an Existing Device</h3>
-
-<ol>
-<li>Open Security Info Portal.</li>
-<li>Delete the old registered device.</li>
-<li>Remove device management profile from the old device.</li>
-<li>Enroll the new device.</li>
-<li>Configure authentication methods.</li>
-</ol>
-
-</div>
-
-<h2>Remove Existing Mobile Device</h2>
-
-<div class="section">
-
-<p>Access Security Info Portal:</p>
-
-<p>https://aka.ms/mysecurityinfo</p>
-
-<h3>iPhone / iPad</h3>
-
-<p>
-Settings → General → VPN & Device Management →
-Management Profile → Remove Management
-</p>
-
-<h3>Android</h3>
-
-<p>
-Settings → Users & Accounts → Work Account →
-Remove Work Profile → Delete
-</p>
-
-</div>
-
-<h2>iOS Enrollment</h2>
+<h2>Virtual Office Access Guide</h2>
 
 <div class="section">
 
 <p>
-Enroll an iPhone or iPad into Microsoft 365 using Safari.
+Virtual Office provides secure access to corporate business applications and virtual desktop resources.
 </p>
 
+<h3>Prerequisites</h3>
+
+<ul>
+<li>Active corporate user account.</li>
+<li>Multi-Factor Authentication configured.</li>
+<li>Microsoft Authenticator installed and activated.</li>
+<li>Virtual Office access approved through the IT Service Catalog.</li>
+</ul>
+
+<h3>Using Virtual Office from the Office Network</h3>
+
 <ol>
-<li>Open Safari.</li>
-<li>Go to https://aka.ms/iosenrollment</li>
-<li>Sign in using ADIB credentials.</li>
-<li>Select Get Started.</li>
-<li>Select Continue.</li>
-<li>Allow Management Profile download.</li>
-<li>Open Settings.</li>
-<li>Select VPN & Device Management.</li>
-<li>Select Management Profile.</li>
-<li>Select Install.</li>
-<li>Select Trust.</li>
-<li>Wait for applications to install.</li>
+<li>Open Citrix Workspace.</li>
+<li>Select the Virtual Office desktop.</li>
+<li>Launch required business applications.</li>
+</ol>
+
+<h3>Using Virtual Office from Home</h3>
+
+<ol>
+<li>Install Citrix Workspace.</li>
+<li>Browse to the company Virtual Office gateway URL.</li>
+<li>Sign in using your corporate email and password.</li>
+<li>Approve the MFA notification in Microsoft Authenticator.</li>
+<li>Complete Citrix Gateway Endpoint Analysis.</li>
+<li>Launch the Virtual Office desktop.</li>
 </ol>
 
 </div>
 
-<h2>Android Enrollment</h2>
-
-<div class="section">
-
-<ol>
-<li>Install Microsoft Intune Company Portal from Google Play.</li>
-<li>Sign in using ADIB credentials.</li>
-<li>Allow all required permissions.</li>
-<li>Select Begin Enrollment.</li>
-<li>Complete enrollment.</li>
-<li>Open Company Portal.</li>
-<li>Wait for applications to install.</li>
-</ol>
-
-</div>
-
-<h2>Microsoft Authenticator Enrollment</h2>
-
-<div class="section">
-
-<p>
-Microsoft Authenticator is the primary authentication method required for access to ADIB services.
-</p>
-
-<ol>
-<li>Install Microsoft Authenticator.</li>
-<li>Open Security Info portal.</li>
-<li>Select Add Method.</li>
-<li>Select Authenticator App.</li>
-<li>Select Add.</li>
-<li>Select Next.</li>
-<li>Scan QR Code.</li>
-<li>Approve Number Matching challenge.</li>
-<li>Select Next.</li>
-<li>Complete registration.</li>
-</ol>
-
-</div>
-
-<h2>Passwordless Authentication</h2>
-
-<div class="section">
-
-<ol>
-<li>Open Microsoft Authenticator.</li>
-<li>Select Abu Dhabi Islamic Bank account.</li>
-<li>Select Enable Phone Sign-In.</li>
-<li>Select Continue.</li>
-<li>Enter Windows password.</li>
-<li>Approve sign in request.</li>
-<li>Passwordless sign-in becomes active.</li>
-</ol>
-
-</div>
-
-<h2>Secondary Authentication Method</h2>
-
-<div class="section">
-
-<ol>
-<li>Open Security Info Portal.</li>
-<li>Select Add Method.</li>
-<li>Select Phone.</li>
-<li>Enter mobile number.</li>
-<li>Select Text Me A Code.</li>
-<li>Enter SMS verification code.</li>
-<li>Select Done.</li>
-</ol>
-
-</div>
+<!-- ===================================================== -->
+<!-- CISCO VPN -->
+<!-- ===================================================== -->
 
 <h2>Cisco AnyConnect VPN</h2>
 
 <div class="section">
 
 <p>
-Use Cisco AnyConnect when connecting an ADIB laptop outside the ADIB network.
+Use Cisco AnyConnect when connecting an enterprise laptop from an external network such as home Wi-Fi.
 </p>
+
+<h3>Steps</h3>
 
 <ol>
 <li>Open Cisco AnyConnect from the taskbar.</li>
 <li>Select personal Wi-Fi network.</li>
-<li>Select Connect.</li>
+<li>Click Connect.</li>
 <li>Enter Wi-Fi password.</li>
-<li>Select OK.</li>
-<li>Wait for connection to complete.</li>
+<li>Click OK.</li>
+<li>Wait for successful connection.</li>
 </ol>
 
 </div>
 
-<h2>vOffice Access</h2>
+<!-- ===================================================== -->
+<!-- MICROSOFT AUTHENTICATOR -->
+<!-- ===================================================== -->
+
+<h2>Microsoft Authenticator Enrollment</h2>
 
 <div class="section">
 
 <p>
-vOffice provides remote access to business applications and virtual desktop services.
+Microsoft Authenticator is required for Multi-Factor Authentication and Passwordless Sign-In.
 </p>
 
-<h3>Prerequisites</h3>
-
-<ul>
-<li>ADIB account.</li>
-<li>MFA setup completed.</li>
-<li>Microsoft Authenticator configured.</li>
-<li>vOffice access approved.</li>
-</ul>
-
-<h3>Access from Home</h3>
+<h3>Enrollment Steps</h3>
 
 <ol>
-<li>Install Citrix Workspace.</li>
-<li>Browse to https://voffice.adib.ae</li>
-<li>Sign in using ADIB email.</li>
-<li>Enter Windows password.</li>
-<li>Approve Microsoft Authenticator request.</li>
-<li>Complete Citrix Gateway validation.</li>
-<li>Launch vOffice desktop.</li>
+<li>Download Microsoft Authenticator from App Store or Google Play.</li>
+<li>Open Security Info Portal.</li>
+<li>Sign in using corporate credentials.</li>
+<li>Select Security Info.</li>
+<li>Select Add Method.</li>
+<li>Select Authenticator App.</li>
+<li>Select Add.</li>
+<li>Select Next.</li>
+<li>Scan QR Code.</li>
+<li>Complete Number Matching verification.</li>
+<li>Select Next.</li>
 </ol>
 
 </div>
+
+<!-- ===================================================== -->
+<!-- PASSWORDLESS -->
+<!-- ===================================================== -->
+
+<h2>Enable Passwordless Sign-In</h2>
+
+<div class="section">
+
+<ol>
+<li>Open Microsoft Authenticator.</li>
+<li>Select the corporate account.</li>
+<li>Select Enable Phone Sign-In.</li>
+<li>Select Continue.</li>
+<li>Enter Windows password.</li>
+<li>Approve Sign-In request.</li>
+</ol>
+
+<p>
+After successful configuration, Microsoft Authenticator can be used for passwordless authentication.
+</p>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- MFA SETUP -->
+<!-- ===================================================== -->
+
+<h2>Authentication Methods Setup</h2>
+
+<div class="section">
+
+<h3>Primary Authentication Method</h3>
+
+<ol>
+<li>Install Microsoft Authenticator.</li>
+<li>Open Security Info portal.</li>
+<li>Add Authenticator App.</li>
+<li>Scan QR Code.</li>
+<li>Complete number matching verification.</li>
+</ol>
+
+<h3>Secondary Authentication Method</h3>
+
+<ol>
+<li>Open Security Info portal.</li>
+<li>Select Add Method.</li>
+<li>Select Phone.</li>
+<li>Enter mobile number.</li>
+<li>Select Text Me A Code.</li>
+<li>Enter verification code.</li>
+<li>Select Done.</li>
+</ol>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- FAQ SECTION -->
+<!-- ===================================================== -->
 
 <h2>Frequently Asked Questions</h2>
 
@@ -239,59 +160,54 @@ vOffice provides remote access to business applications and virtual desktop serv
 
 <h3>I changed my mobile phone. What should I do?</h3>
 <p>
-Delete the old device from Security Info, remove the profile from the old device, and enroll the new device.
+Remove the old device from Security Info, delete the management profile from the old phone, and enroll the new device.
 </p>
 
 <h3>I cannot access Microsoft Authenticator.</h3>
 <p>
-Use SMS verification if previously configured.
+Use the alternative SMS authentication method if previously configured.
 </p>
 
-<h3>How do I enable Passwordless Authentication?</h3>
+<h3>How do I access corporate resources while working from home?</h3>
 <p>
-Open Microsoft Authenticator, choose the ADIB account, select Enable Phone Sign-In, and complete verification.
+Use Cisco AnyConnect or access Virtual Office through Citrix Workspace depending on the service required.
 </p>
 
-<h3>How do I work remotely?</h3>
+<h3>How do I enable Passwordless Sign-In?</h3>
 <p>
-Use Cisco AnyConnect VPN or vOffice remote desktop depending on service requirements.
+Open Microsoft Authenticator, select your company account, enable Phone Sign-In, and complete verification.
 </p>
 
-<h3>How long does enrollment take?</h3>
+<h3>How long does mobile enrollment take?</h3>
 <p>
-Application deployment may take up to 15 minutes after successful enrollment.
+Applications may take up to 15 minutes to appear after enrollment completes.
 </p>
 
 </div>
 
-<h2>Copilot Search Keywords</h2>
+<!-- ===================================================== -->
+<!-- SEARCH KEYWORDS -->
+<!-- ===================================================== -->
+
+<h2>Knowledge Search Keywords</h2>
 
 <div class="section">
 
 <p>
-iOS Enrollment,
-Android Enrollment,
-Intune Company Portal,
-Mobile Device Enrollment,
-Security Info,
-Microsoft Authenticator,
-Authenticator Enrollment,
-QR Code Setup,
-MFA,
-Passwordless Authentication,
-Phone Sign-In,
-SMS Verification,
-Cisco AnyConnect,
-VPN,
-Remote Access,
-Citrix Workspace,
-vOffice,
-Work From Home,
-Microsoft 365 Mobile Setup,
-ADIB Mobile Access
+Corporate, Mobile Enrollment, iPhone Enrollment, Android Enrollment,
+Microsoft 365 Mobile Setup, MFA, Multi Factor Authentication,
+Authenticator Enrollment, QR Code Registration,
+Passwordless Authentication, Security Info,
+SMS Verification, Phone Sign-In,
+Intune Company Portal, Management Profile,
+Work Profile, Microsoft Authenticator,
+Cisco AnyConnect, VPN,
+Remote Access, Work From Home,
+Citrix Workspace, Citrix Gateway,
+Virtual Office, Virtual Desktop,
+Mobile Device Registration,
+Authentication Methods Setup,
+Remote Connectivity.
 </p>
 
 </div>
-
-</body>
-</html>
